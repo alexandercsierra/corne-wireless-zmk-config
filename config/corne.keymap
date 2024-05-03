@@ -24,8 +24,8 @@
                         bindings = <
    &mt RALT TAB   &kp Q &kp W  &kp E     &kp R &kp T             &kp Y    &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp LSHFT      &kp A &kp S  &kp D     &kp F &kp G             &kp H    &kp J  &kp K     &kp L   &kp SEMI &kp SINGLE_QUOTE
-   &kp LCTRL      &kp Z &kp X  &kp C     &kp V &kp B             &kp N    &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                               &kp LCTRL &mo 1 &mt LCTRL SPACE   &kp RET  &mo 2  &kp RALT
+   &kp LGUI      &kp Z &kp X   &kp C     &kp V &kp B             &kp N    &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+                               &kp LCTRL &mo 1 &mt LGUI SPACE   &kp RET  &mo 2  &kp RALT
                         >;
                 };
                 lower_layer {
@@ -36,10 +36,10 @@
 //                    | GUI |     | SPC |                                        |BSPC |     | ALT |
                         display-name = "Lower";
                         bindings = <
-   &mt ESC GRAVE    &trans      &trans       &kp UP       &trans       &trans         &trans   &kp N7   &kp N8  &kp N9    &kp N0            &kp BSPC
-   &kp C_PLAY_PAUSE &kp BSPC   &kp LEFT     &kp DOWN     &kp RIGHT    &trans         &trans   &kp N4   &kp N5  &kp N6    &kp K_VOLUME_UP   &kp K_PREV
-   &kp C_MUTE       &trans      &trans       &trans       &trans       &trans         &kp N0   &kp N1   &kp N2  &kp N3    &kp K_VOLUME_DOWN &kp K_NEXT
-                          	             &kp LGUI     &trans       &trans         &kp BSPC &trans   &kp RALT
+   &mt ESC GRAVE    &trans      &trans      &kp UP       &trans       &trans         &trans   &kp N7   &kp N8  &kp N9    &kp N0            &kp BSPC
+   &kp C_PLAY_PAUSE &kp BSPC   &kp LEFT     &kp DOWN      &kp RIGHT    &trans         &trans   &kp N4   &kp N5  &kp N6    &kp K_VOLUME_UP   &kp K_PREV
+   &kp C_MUTE       &trans      &trans      &trans       &kp BSPC       &trans         &kp N0   &kp N1   &kp N2  &kp N3    &kp K_VOLUME_DOWN &kp K_NEXT
+                          	            &trans     &trans       &trans         &kp BSPC &trans   &kp RALT
                         >;
                 };
 
@@ -51,10 +51,10 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         display-name = "Raise";
                         bindings = <
-   &mt ESC GRAVE   &kp EXCL &kp AT   &kp HASH &kp DLLR   &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR &kp BSPC
-   &trans          &trans   &kp LBKT &kp RBKT &kp LBRC   &kp RBRC    &kp MINUS &kp EQUAL &kp LBRC        &kp RBRC  &kp BSLH &kp GRAVE
-   &trans          &trans   &trans   &trans   &trans     &trans      &kp UNDER &kp PLUS  &kp LT          &kp GT   &kp PIPE &kp TILDE
-                    	             &kp LGUI &trans     &trans      &kp RET   &trans    &kp RALT
+   &kp GRAVE   &kp EXCL &kp AT   &kp HASH &kp DLLR   &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR &kp BSPC
+   &trans      &trans   &kp LBKT &kp RBKT &kp LBRC   &kp RBRC    &kp MINUS &kp EQUAL &kp LBRC        &kp RBRC  &kp BSLH &kp GRAVE
+   &trans      &trans   &trans   &trans   &trans     &trans      &kp UNDER &kp PLUS  &kp LT          &kp GT   &kp PIPE &kp TILDE
+                    	                  &kp LGUI   &kp LPAR    &kp RPAR  &kp RET   &trans          &kp RALT
                         >;
                 };
         };
