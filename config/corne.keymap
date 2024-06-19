@@ -98,7 +98,7 @@
       >;
 
                 };
-                mouse_layer {
+                bt_layer {
                         display-name = "Bluetooth";
 
       bindings = <
