@@ -29,17 +29,17 @@
                     label = "SCREENSHOT_CLIPBOARD";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
-                    bindings = <&macro_press &kp LCTRL &kp LSHFT &kp LCMD>
+                    bindings = <&macro_press &kp LCTRL &kp LSHFT &kp LGUI>
                                 <&macro_tap &kp N4>
-                                <&macro_release &kp LCMD &kp LSHFT &kp LCTRL>;
+                                <&macro_release &kp LGUI &kp LSHFT &kp LCTRL>;
                 };
                 screenshot_file: screenshot_file {
                     label = "SCREENSHOT_FILE";
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
-                    bindings = <&macro_press &kp LSHFT &kp LCMD>
+                    bindings = <&macro_press &kp LSHFT &kp LGUI>
                                 <&macro_tap &kp N4>
-                                <&macro_release &kp LCMD &kp LSHFT>;
+                                <&macro_release &kp LGUI &kp LSHFT>;
                 };
                 layer_0: layer_0 {
                     label = "LAYER_ZERO";
